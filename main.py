@@ -1,11 +1,11 @@
 from constants import print_linked_lists, list_to_linked_list
-from problem_58_length_of_last_word import Solution
+from problem_24_swap_nodes_in_pairs import Solution
 
 if __name__ == "__main__":
     solution = Solution()
-    case = "   fly me   to   the moon  "
-    result = solution.lengthOfLastWord(case)
+    case = list_to_linked_list([1, 2, 3, 4, 5])
+    result = solution.swapPairs(case)
 
-    print(result)
+    print_linked_lists(result)
 
     # print(result)

@@ -1,3 +1,7 @@
+case1 = "   fly me   to   the moon  "
+case1_expected = 4
+
+
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         count = 0
