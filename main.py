@@ -1,11 +1,10 @@
 from constants import print_linked_lists, list_to_linked_list
-from problem_24_swap_nodes_in_pairs import Solution
+from problem_39_combination_sum import Solution
 
 if __name__ == "__main__":
     solution = Solution()
-    case = list_to_linked_list([1, 2, 3, 4, 5])
-    result = solution.swapPairs(case)
+    result = solution.combinationSum(candidates=[2,3,6,7], target=7)
 
-    print_linked_lists(result)
+    print(result)
 
     # print(result)
