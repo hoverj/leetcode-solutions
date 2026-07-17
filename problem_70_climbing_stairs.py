@@ -1,6 +1,4 @@
 class Solution:
-    # NOT DONE
-
     def climbStairs(self, n: int) -> int:
         tracker = {0: 0}
 
@@ -17,7 +15,9 @@ class Solution:
             if steps_left == 2:
                 return 2
 
-            return memoization(steps_left - 1) + memoization(steps_left - 2)
+            result = memoization(steps_left - 1) + memoization(steps_left - 2)
+            tracker[steps_left] = result
+            return result
 
         return memoization(steps_left=n)
 
@@ -41,7 +41,7 @@ Explanation: There are three ways to climb to the top.
 """
 if __name__ == "__main__":
     solution = Solution()
-    result = solution.mySqrt(8)
+    result = solution.climbStairs(3)
 
     print(result)
 
