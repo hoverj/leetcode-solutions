@@ -1,5 +1,9 @@
 from typing import Optional
-from constants import ListNode, list_to_linked_list, print_linked_lists
+from structure_builders.linked_list import (
+    ListNode,
+    list_to_linked_list,
+    print_linked_lists,
+)
 
 case = list_to_linked_list([1, 2, 3, 4, 5])
 result = list_to_linked_list([2, 1, 4, 3, 5])

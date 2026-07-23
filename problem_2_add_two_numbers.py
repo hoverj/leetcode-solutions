@@ -1,5 +1,5 @@
 from typing import Optional
-from constants import ListNode
+from structure_builders.linked_list import ListNode
 
 
 class Solution:
